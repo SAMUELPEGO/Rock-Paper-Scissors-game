@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" type="text/css" href="./principal-page-styles.css">
+  <link rel="stylesheet" type="text/css" href="./bootstrap-5.3.2-dist/css/bootstrap.min.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi +Condensed:wght@600&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+
+</head>
+<body>
+  <div id="div" class="max-container container d-flex justify-content-center text-center mt-5 px-5 flex-wrap">
+   <h1 class="w-100">WELCOME TO <span>ROCK PAPER SCISSORS GAME</span></h1>
+   <div class="modes-container d-flex w-100 flex-wrap container"> 
+    <h2 class="w-100">MODES</h2>
+    <div class="mt-5 w-100 justify-content-center justify-content-md-between">
+     
+     <img src="./assets/logo.svg" alt="logo">
+     
+     <div class="div-button1 gap-5 justify-content-center">
+      <a href="./rock-paper-scissors-master/rock-paper-scissors-master.html"><button>PLAY</button></a>
+      <button onclick="open_modal_normal_mode()">RULES</button>
+     </div>
+    </div>
+    <div class="mt-5 w-100 justify-content-center justify-content-md-between">
+      <img src="./assets/logo-bonus.svg" alt="logo">
+     <div class="div-button2 gap-5 justify-content-center">
+      <a href="./rock-paper-scissors-lizard-spock/rock-paper-scissors-lizard-spock.html"><button>PLAY</button></a>
+      <button onclick="open_modal_bonus_mode()">RULES</button>
+     </div>
+     </div>
+   </div>
+  </div>
+  <dialog id="modal_rules" class="modal_rules rounded">
+    <div class="div_modal d-flex flex-wrap justify-content-center" id="div_modal">
+      <p class="fw-bold ">RULES</p>
+      <img src="./assets/image-rules.svg">
+      <img onclick="close_modal_normal_mode()" src="./assets/icon-close.svg">
+    </div>
+   </dialog>
+   <dialog id="modal_rules" class="modal_rules rounded">
+    <div class="div_modal d-flex flex-wrap justify-content-center" id="div_modal">
+      <p class="fw-bold ">RULES</p>
+      <img src="./assets/image-rules-bonus.svg">
+      <img onclick="close_modal_bonus_mode()" src="./assets/icon-close2.svg">
+    </div>
+   </dialog>
+
+<script src="./principal-page-script.js"></script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+:root {
+--ScissorsGradient: hsl(39, 89%, 49%) , hsl(40, 84%, 53%);
+--PaperGradient: hsl(230, 89%, 62%) , hsl(230, 89%, 65%);
+--RockGradient: hsl(349, 71%, 52%) , hsl(349, 70%, 56%);
+--LizardGradient: hsl(261, 73%, 60%) , hsl(261, 72%, 63%);
+--Cyan: hsl(189, 59%, 53%) , hsl(189, 58%, 57%);
+--DarkText: hsl(229, 25%, 31%);
+--ScoreText: hsl(229, 64%, 46%);
+--HeaderOutline: hsl(217, 16%, 45%);
+--RadialGradient: hsl(214, 47%, 23%) , hsl(237, 49%, 15%);
+}
+* {
+    font-family: 'Barlow Semi Condensed', sans-serif !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+body {
+    background: linear-gradient(hsl(214, 47%, 23%),hsl(237, 49%, 15%)) no-repeat; 
+    height: 100vh;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+article {
+    min-width: 335px;   
+    max-width: 500px;
+    
+}
+header {
+    border: 4px solid hsl(217, 16%, 45%) !important;
+    padding: 20px !important;
+}
+section {
+    margin-top: 100px !important;
+    position: relative;
+}
+section button,.div_election button {
+    padding: 30px !important;
+    border-radius: 100%;
+    border: none;
+    box-shadow: inset 0px 7px 0 0 rgba(0, 0, 0, .1);
+}
+section div div img:hover {
+    transform: scale(1.2);
+}
+
+section div div,.div_election div {
+    position: absolute;
+    padding: 17px !important;
+    border-radius: 100%;
+    box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, .4);
+}
+.div_election {
+    position: relative;
+}
+.div_election div {
+    position: unset;
+    float: left;
+    margin: 60px 10px 0 10px !important;
+    font-weight: 900 !important;
+    transition: all 1s;
+}
+.div_election div:nth-child(2) {
+float: right;
+}
+.div_election div:nth-child(1)::before {
+    content: "YOU PICKED";
+    position: absolute;
+    top: 230px;
+}
+.div_election div:nth-child(2)::before {
+    content: "THE HOUSE PICKED";
+    position: absolute;
+    top: 230px;
+    right: 0px ;
+}
+.button_paper {
+    left: 70%;
+    top: 15%;
+    background: linear-gradient(hsl(230, 89%, 62%),hsl(230, 89%, 65%));
+    
+}
+.button_scissors {
+    left: 27%;
+    top: -25%;
+    background: linear-gradient(hsl(39, 89%, 49%),hsl(40, 84%, 53%));
+}
+.button_rock {
+    left: 60%;
+    top: 75%;
+    background: linear-gradient(hsl(349, 71%, 52%),hsl(349, 70%, 56%));
+}
+.button_lizard {
+    left: -5%;
+    top: 75%;
+    background: linear-gradient(hsl(261, 73%, 60%),hsl(261, 72%, 63%));
+}
+.button_spock {
+    left: -15%;
+    top: 15%;
+    background: linear-gradient(hsl(189, 59%, 53%) ,hsl(189, 58%, 57%));
+}
+section div:first-child {
+    position: relative;
+}
+footer {
+    margin-top: 100px !important;
+}
+footer button {
+    background: none !important;
+    border:3px solid hsl(217, 16%, 45%);
+}
+dialog {
+    width: 400px;
+    min-width: 335px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    padding: 20px !important;
+    overflow-y: auto;
+      
+}
+dialog * {
+    margin-bottom: 20px !important;
+}
+dialog :nth-child(2) {
+    width: 100%;
+}
+dialog div {
+    margin-top: 20px !important;
+    position: relative;
+}
+
+@media only screen and (min-width: 400px) {
+  dialog div p {
+    position: relative;
+    left: -130px;
+}
+  dialog div :nth-child(3) {
+    position: absolute;
+    left: 310px;
+  }
+}
+.div_result {
+    margin-top: 100px !important;
+}
+.div_result * {
+    width: max-content;
+    margin: 20px auto !important;
+    border: none; 
+}
+.div_result button:hover {
+   transform: scaleX(1.2);
+}

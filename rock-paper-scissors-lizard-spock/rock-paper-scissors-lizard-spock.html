@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <link rel="stylesheet" type="text/css" href="../bootstrap-5.3.2-dist/css/bootstrap.min.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi +Condensed:wght@600&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+
+</head>
+<body id="body" class="text-light">
+ <article class=" article row mt-5 m-auto d-flex flex-wrap justify-content-center" id="article">
+  <header id="header" class="header col col-12 d-flex flex-wrap justify-content-between rounded">
+    <img src="../assets/logo-bonus.svg" alt="logo">
+   <div class="container_score p-4 bg-white text-primary rounded d-flex flex-column flex-wrap justify-content-between text-center align-items-center">
+    <p class="w-100 fw-bold">SCORE</p>
+    <span class="fw-bold text-secondary fs-1" id="points">0</span>
+   </div> 
+  </header>
+      
+  <section id="container_buttons" class="container_buttons col col-12 d-flex justify-content-center">
+    <div id="sub_container_buttons" class="sub_container_buttons">
+      <img src="../assets/bg-pentagon.svg" alt="img">
+      <div id="button_paper" class="button_paper button"><button><img src="../assets/icon-paper.svg"></button></div>
+      <div id="button_scissors" class="button_scissors button"><button><img src="../assets/icon-scissors.svg"></button></div>
+      <div id="button_rock" class="button_rock button"><button><img src="../assets/icon-rock.svg"></button></div>
+      <div id="button_spock" class="button_spock button"><button><img src="../assets/icon-spock.svg"></button></div>
+      <div id="button_lizard" class="button_lizard button"><button><img src="../assets/icon-lizard.svg"></button></div>
+    </div>
+  </section>
+ <div class="div_election" id="div_election"></div>
+ </article>
+ <div class="div_result lose text-center" hidden>
+  <h3 class="fw-bold fs-1">YOU LOSE</h3>
+  <button class="px-4 py-2 bg-white text-secondary fw-bold rounded">PLAY AGAIN</button>
+ </div>
+ <div class="div_result win text-center" hidden>
+  <h3 class="fw-bold fs-1">YOU WIN</h3>
+  <button class="px-4 py-2 bg-white text-secondary fw-bold rounded">PLAY AGAIN</button>
+ </div>
+ <div class="div_result tie text-center" hidden>
+  <h3 class="fw-bold fs-1">TIE</h3>
+  <button class="px-4 py-2 bg-white text-secondary fw-bold rounded">PLAY AGAIN</button>
+ </div>
+ <footer id="footer" class="footer col col-12 d-flex justify-content-between">
+  <a href="../principal-page.html"><button id="button_rules" class="text-light p-2 px-4 mb-5 mx-5 rounded fw-bold">MODES</button></a>
+  <button id="button_rules" class="text-light p-2 px-4 mb-5 mx-5 rounded fw-bold" onclick="open_modal()">RULES</button>
+ </footer>
+ <dialog id="modal_rules" class="modal_rules rounded">
+  <div class="div_modal d-flex flex-wrap justify-content-center" id="div_modal">
+    <p class="fw-bold ">RULES</p>
+    <img src="../assets/image-rules-bonus.svg">
+    <img onclick="close_modal()" src="../assets/icon-close.svg">
+  </div>
+ </dialog>
+ <script src="./rock-paper-scissors-scripts/script_modals.js"></script>
+ <script src="./rock-paper-scissors-scripts/script.js"></script>
+</body>
+</html>
