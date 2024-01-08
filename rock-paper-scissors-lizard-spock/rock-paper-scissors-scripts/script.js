@@ -16,7 +16,7 @@ if (localStorage.getItem("points") !== null) {
 else {
     points.innerHTML = "0";
 }
-window.addEventListener("beforeunload",()=> localStorage.setItem("points",points.innerHTML));
+
     
 
 weakness = {
