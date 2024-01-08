@@ -13,6 +13,9 @@ const points = document.getElementById("points");
 if (localStorage.getItem("points") !== null) {
     points.innerHTML = localStorage.getItem("points");
     }
+else {
+    points.innerHTML = "0";
+}
 window.addEventListener("beforeunload",()=> localStorage.setItem("points",points.innerHTML));
     
 
