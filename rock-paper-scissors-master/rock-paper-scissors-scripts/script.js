@@ -7,7 +7,13 @@ const buttons = document.getElementsByClassName("button");
 const div_result = document.getElementsByClassName("div_result");
 const points = document.getElementById("points");
 
-
+if (points.innerHTML = localStorage.getItem("points") !== null) {
+points.innerHTML = localStorage.getItem("points");
+}
+else {
+    points.innerHTML = "0"
+}
+window.addEventListener("beforeunload",()=> localStorage.setItem("points",points.innerHTML));
 
 
 weakness = {
