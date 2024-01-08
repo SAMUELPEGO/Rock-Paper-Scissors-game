@@ -14,7 +14,7 @@ else {
     points.innerHTML = "0"
 }
 
-window.addEventListener("beforeunload",()=> localStorage.setItem("points",points.innerHTML));
+
 
 weakness = {
     "button_paper":button_scissors,
